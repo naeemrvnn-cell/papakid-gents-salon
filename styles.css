@@ -136,7 +136,7 @@ main {
 .quick-services,
 .split-band,
 .menu-section,
-.menu-image-section,
+.service-note-section,
 .story-section,
 .contact-layout {
   max-width: var(--max);
@@ -196,7 +196,7 @@ h3 {
 .hero-text,
 .page-hero p,
 .story-copy p,
-.menu-image-section p {
+.service-note-section p {
   max-width: 720px;
   color: var(--muted);
   font-size: 18px;
@@ -233,21 +233,39 @@ h3 {
   background: rgba(255, 202, 5, 0.05);
 }
 
-.hero-visual {
+.hero-menu {
   position: relative;
   border: 1px solid rgba(255, 202, 5, 0.35);
   border-radius: 8px;
-  padding: 12px;
+  padding: 30px;
   background: linear-gradient(180deg, rgba(255,202,5,0.1), rgba(255,255,255,0.02));
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.48);
 }
 
-.hero-visual img {
-  width: 100%;
-  aspect-ratio: 9 / 14;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 6px;
+.hero-menu h2 {
+  margin-bottom: 24px;
+  font-size: clamp(30px, 4vw, 46px);
+}
+
+.hero-menu-list {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.hero-menu-list span {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.hero-menu-list strong {
+  color: var(--gold);
+  white-space: nowrap;
 }
 
 .section-heading {
@@ -406,17 +424,22 @@ h3 {
   white-space: nowrap;
 }
 
-.menu-image-section {
+.service-note-section {
   display: grid;
-  grid-template-columns: 0.8fr minmax(260px, 360px);
+  grid-template-columns: 1fr auto;
   gap: 40px;
   align-items: center;
 }
 
-.menu-image-section img {
-  border-radius: 8px;
-  border: 1px solid rgba(255, 202, 5, 0.34);
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.36);
+.service-note-section {
+  border-top: 1px solid var(--line);
+}
+
+.service-note-section p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .story-section {
@@ -519,7 +542,7 @@ textarea {
 @media (max-width: 920px) {
   .hero,
   .split-band,
-  .menu-image-section,
+  .service-note-section,
   .story-section,
   .contact-layout {
     grid-template-columns: 1fr;
@@ -534,7 +557,7 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-visual {
+  .hero-menu {
     max-width: 420px;
   }
 }
@@ -574,7 +597,7 @@ textarea {
   .quick-services,
   .split-band,
   .menu-section,
-  .menu-image-section,
+  .service-note-section,
   .story-section,
   .contact-layout {
     padding-left: 18px;
