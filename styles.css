@@ -597,6 +597,12 @@ textarea {
   line-height: 1.6;
 }
 
+.footer-nav-block {
+  display: grid;
+  gap: 14px;
+  justify-items: end;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -607,17 +613,20 @@ textarea {
   font-weight: 800;
 }
 
-.social-link {
-  display: inline-grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
+.instagram-follow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 9px 12px 9px 16px;
   border: 1px solid rgba(255, 202, 5, 0.45);
   border-radius: 8px;
   background: rgba(255, 202, 5, 0.08);
+  color: var(--gold);
+  font-weight: 900;
 }
 
-.social-link svg {
+.instagram-follow svg {
   width: 22px;
   height: 22px;
   fill: none;
@@ -627,7 +636,7 @@ textarea {
   stroke-linejoin: round;
 }
 
-.social-link:hover {
+.instagram-follow:hover {
   color: var(--black);
   background: var(--gold);
 }
@@ -721,5 +730,9 @@ textarea {
 
   .site-footer {
     flex-direction: column;
+  }
+
+  .footer-nav-block {
+    justify-items: start;
   }
 }
