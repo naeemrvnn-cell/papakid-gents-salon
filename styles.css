@@ -601,9 +601,35 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  align-items: center;
   align-content: flex-start;
   color: var(--gold);
   font-weight: 800;
+}
+
+.social-link {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 202, 5, 0.45);
+  border-radius: 8px;
+  background: rgba(255, 202, 5, 0.08);
+}
+
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-link:hover {
+  color: var(--black);
+  background: var(--gold);
 }
 
 @media (max-width: 920px) {
