@@ -53,7 +53,7 @@ export default function HomePage() {
         <div className="grid gap-4 rounded-3xl border border-white/10 bg-white/[0.07] p-4 shadow-luxury backdrop-blur-xl sm:grid-cols-2 lg:grid-cols-4">
           {[
             ["4.1★", "Google Reviews"],
-            ["1000+", "Happy Clients"],
+            ["500+", "Happy Clients"],
             ["Al Warqa 1", "Dubai Location"],
             ["Walk-ins", "Served Daily"]
           ].map(([value, label]) => (
