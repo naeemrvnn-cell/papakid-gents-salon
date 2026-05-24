@@ -33,8 +33,7 @@ export default function ContactPage() {
           <div className="glass rounded-3xl p-7">
             <h2 className="font-display text-3xl font-black">Business hours</h2>
             <div className="mt-5 grid gap-3 text-white/66">
-              <div className="flex justify-between gap-4"><span>Monday - Thursday</span><strong className="text-white">10:00 AM - 11:00 PM</strong></div>
-              <div className="flex justify-between gap-4"><span>Friday - Sunday</span><strong className="text-white">10:00 AM - 12:00 AM</strong></div>
+              <div className="flex justify-between gap-4"><span>Monday - Sunday</span><strong className="text-white">09:00 AM - 12:00 AM</strong></div>
             </div>
           </div>
 
@@ -50,10 +49,14 @@ export default function ContactPage() {
           <div className="glass rounded-3xl p-5 sm:p-7">
             <h2 className="font-display text-3xl font-black">Service feedback or suggestion</h2>
             <p className="mt-3 leading-7 text-white/60">Tell us what you enjoyed or what you would like the salon to improve.</p>
-            <form className="mt-6 grid gap-4" action="#" method="post">
+            <form className="mt-6 grid gap-4" action="https://formspree.io/f/mqejlglv" method="post">
               <label className="grid gap-2 text-sm font-bold text-gold">
                 Name
-                <input className={inputClass} name="name" placeholder="Your name" />
+                 <input className={inputClass} name="name" placeholder="Your name" required />
+              </label>
+              <label className="grid gap-2 text-sm font-bold text-gold">
+                Email for response
+                <input className={inputClass} name="email" type="email" placeholder="your@email.com" required />
               </label>
               <label className="grid gap-2 text-sm font-bold text-gold">
                 Service visited for
@@ -76,10 +79,14 @@ export default function ContactPage() {
           <div className="glass rounded-3xl p-5 sm:p-7">
             <h2 className="font-display text-3xl font-black">Service or staff complaint</h2>
             <p className="mt-3 leading-7 text-white/60">Use this form for concerns about service quality, waiting time, staff behavior, or salon experience.</p>
-            <form className="mt-6 grid gap-4" action="#" method="post">
+            <form className="mt-6 grid gap-4" action="https://formspree.io/f/xvzybpko" method="post">
               <label className="grid gap-2 text-sm font-bold text-gold">
                 Name
-                <input className={inputClass} name="complaintName" placeholder="Your name" />
+                 <input className={inputClass} name="complaintName" placeholder="Your name" required />
+              </label>
+              <label className="grid gap-2 text-sm font-bold text-gold">
+                Email for response
+                <input className={inputClass} name="complaintEmail" type="email" placeholder="your@email.com" required />
               </label>
               <label className="grid gap-2 text-sm font-bold text-gold">
                 Visit date
@@ -104,7 +111,7 @@ export default function ContactPage() {
           </div>
 
           <p className="text-sm leading-6 text-white/50">
-            These forms are ready for connection to Formspree, Vercel serverless email, or another form provider when you choose how feedback should be delivered.
+            You will receive a response within 5 business days.
           </p>
         </div>
       </section>
