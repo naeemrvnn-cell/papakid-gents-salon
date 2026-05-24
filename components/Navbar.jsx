@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="container-lux pb-5 lg:hidden">
           <div className="glass grid gap-2 rounded-2xl p-3">
             {nav.map(([label, href]) => (
-              <Link key={href} href={href} onClick={() => setOpen(false)} className="rounded-xl px-4 py-3 font-bold text-white/80 hover:bg-gold hover:text-ink">
+              <Link key={href} href={href} onClick={() => setOpen(false)} className="rounded-xl px-4 py-3 font-bold text-white/80 transition duration-300 hover:text-gold">
                 {label}
               </Link>
             ))}

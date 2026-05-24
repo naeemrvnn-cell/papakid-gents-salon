@@ -108,14 +108,14 @@ export default function HomePage() {
         </Reveal>
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
           {packages.map(([name, price, perks, badge]) => (
-            <article key={name} className="glass rounded-3xl p-7 transition hover:-translate-y-1 hover:border-gold/50">
+            <article key={name} className="glass flex h-full flex-col rounded-3xl p-7 transition hover:-translate-y-1 hover:border-gold/50">
               <p className="mb-5 inline-flex rounded-full bg-gold px-3 py-1 text-xs font-black uppercase text-ink">{badge}</p>
               <h3 className="font-display text-3xl font-black">{name}</h3>
               <p className="mt-4 text-3xl font-black text-gold">{price}</p>
               <ul className="mt-6 grid gap-3 text-white/70">
                 {perks.map((perk) => <li key={perk}>✓ {perk}</li>)}
               </ul>
-              <div className="mt-7"><BookingModal label="Choose Plan" className="gold-button w-full" /></div>
+              <div className="mt-auto pt-7"><BookingModal label="Choose Plan" className="gold-button w-full" /></div>
             </article>
           ))}
         </div>
@@ -232,11 +232,11 @@ export default function HomePage() {
       </section>
 
       <section className="container-lux pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-gold p-8 text-ink shadow-gold sm:p-12">
+        <div className="relative overflow-hidden rounded-3xl bg-gold p-8 text-ink sm:p-12">
           <h2 className="font-display text-4xl font-black leading-none sm:text-6xl">Ready for Your Next Fresh Look?</h2>
           <div className="mt-7 flex flex-wrap gap-4">
-            <BookingModal label="Book Now" className="inline-flex min-h-12 items-center justify-center rounded-xl bg-ink px-6 py-3 font-black text-white transition hover:-translate-y-0.5" />
-            <a className="inline-flex min-h-12 items-center justify-center rounded-xl border border-ink/25 px-6 py-3 font-black" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp Us</a>
+            <BookingModal label="Book Now" className="inline-flex min-h-12 items-center justify-center rounded-xl bg-ink px-6 py-3 font-black text-white transition duration-300 hover:-translate-y-0.5" />
+            <a className="inline-flex min-h-12 items-center justify-center rounded-xl border border-ink/25 px-6 py-3 font-black transition duration-300 hover:-translate-y-0.5" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp Us</a>
           </div>
         </div>
       </section>

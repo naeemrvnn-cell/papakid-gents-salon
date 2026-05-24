@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
           </div>
-          <a className="inline-flex items-center gap-3 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 font-black text-gold transition hover:bg-gold hover:text-ink" href={site.instagram} target="_blank" rel="noreferrer">
+          <a className="inline-flex items-center gap-3 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 font-black text-gold transition duration-300 hover:-translate-y-0.5 hover:border-gold" href={site.instagram} target="_blank" rel="noreferrer">
             <span>Follow us on Instagram</span>
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <rect x="3" y="3" width="18" height="18" rx="5" />

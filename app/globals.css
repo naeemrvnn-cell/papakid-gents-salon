@@ -47,11 +47,11 @@ body::before {
   }
 
   .gold-button {
-    @apply inline-flex min-h-12 items-center justify-center rounded-xl bg-gold px-6 py-3 font-black text-ink shadow-gold transition hover:-translate-y-0.5 hover:bg-yellow-300;
+    @apply inline-flex min-h-12 items-center justify-center rounded-xl bg-gold px-6 py-3 font-black text-ink transition duration-300 hover:-translate-y-0.5;
   }
 
   .dark-button {
-    @apply inline-flex min-h-12 items-center justify-center rounded-xl border border-gold/50 bg-white/[0.04] px-6 py-3 font-black text-gold transition hover:-translate-y-0.5 hover:bg-gold hover:text-ink;
+    @apply inline-flex min-h-12 items-center justify-center rounded-xl border border-gold/50 bg-white/[0.04] px-6 py-3 font-black text-gold transition duration-300 hover:-translate-y-0.5 hover:border-gold;
   }
 
   .eyebrow {

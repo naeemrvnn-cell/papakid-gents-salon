@@ -4,7 +4,7 @@ export default function FloatingWhatsApp() {
   const text = encodeURIComponent("Hi Papa Kid Gents Salon, I want to book an appointment.");
   return (
     <a
-      className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gold text-ink shadow-gold transition hover:scale-105"
+      className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gold text-ink transition duration-300 hover:scale-105"
       href={`https://wa.me/${site.whatsapp}?text=${text}`}
       target="_blank"
       rel="noreferrer"
