@@ -73,7 +73,7 @@ export default function HomePage() {
         </Reveal>
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
           {featuredServices.map(([title, price, description, image]) => (
-            <ServiceCard key={title} title={title} price={price} description={description} image={image} />
+            <ServiceCard key={title} title={title} price={price} description={description} image={image} compact />
           ))}
         </div>
       </section>
