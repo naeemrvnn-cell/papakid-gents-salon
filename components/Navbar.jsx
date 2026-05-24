@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import BookingModal from "./BookingModal";
 
 const nav = [
   ["Home", "/"],
@@ -36,9 +35,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <BookingModal label="Book Now" />
-        </div>
+        <Link className="gold-button hidden lg:inline-flex" href="/contact">Visit Us</Link>
 
         <button
           className="grid h-11 w-11 place-items-center rounded-xl border border-white/15 bg-white/[0.04] lg:hidden"
@@ -62,7 +59,9 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
-            <BookingModal label="Book Appointment" className="gold-button mt-2 w-full" />
+            <Link href="/contact" onClick={() => setOpen(false)} className="gold-button mt-2 w-full">
+              Visit Us
+            </Link>
           </div>
         </div>
       )}
