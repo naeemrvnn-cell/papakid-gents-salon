@@ -135,7 +135,7 @@ export default function HomePage() {
           <p className="mt-5 max-w-2xl leading-8 text-white/65">{site.address}</p>
           <div className="mt-7 flex flex-wrap gap-4">
             <a className="gold-button" href={site.mapUrl} target="_blank" rel="noreferrer">Open Google Maps</a>
-            <a className="dark-button" href={`tel:${site.tel}`}>Call</a>
+            <a className="dark-button" href={`tel:${site.phone}`}>Call</a>
           </div>
         </div>
       </section>
