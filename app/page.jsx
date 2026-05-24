@@ -9,7 +9,6 @@ const featuredServices = [
   ["Beard Styling", 25, "Precise shaping, trimming, and line work for a refined profile.", images.beard],
   ["Hair Treatments", 75, "Keratin, protein care, dandruff treatment, and texture control.", images.tools],
   ["Skin Care", 15, "Threading, waxing, masks, facials, scrub, and steam.", images.chair],
-  ["Grooming Packages", 89, "Curated combos for busy professionals and regular clients.", images.interior]
 ];
 
 const gallery = [images.hero, images.beard, images.interior, images.fade, images.chair, images.tools];
