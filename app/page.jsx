@@ -58,7 +58,7 @@ export default function HomePage() {
             ["Walk-ins", "Served Daily"]
           ].map(([value, label]) => (
             <div key={label} className="rounded-2xl bg-ink/55 p-5 text-center">
-              <div className="font-display text-3xl font-black text-gold">{value === "500+" ? <Counter value={5000} suffix="+" /> : value}</div>
+              <div className="font-display text-3xl font-black text-gold">{value === "500+" ? <Counter value={500} suffix="+" /> : value}</div>
               <div className="mt-1 text-sm font-bold text-white/62">{label}</div>
             </div>
           ))}
