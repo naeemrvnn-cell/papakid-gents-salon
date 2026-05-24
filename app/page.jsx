@@ -52,9 +52,9 @@ export default function HomePage() {
       <section className="container-lux -mt-10 relative z-20">
         <div className="grid gap-4 rounded-3xl border border-white/10 bg-white/[0.07] p-4 shadow-luxury backdrop-blur-xl sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["4.8★", "Google Reviews"],
-            ["5000+", "Happy Clients"],
-            ["Al Warqa", "Dubai Location"],
+            ["4.1★", "Google Reviews"],
+            ["1000+", "Happy Clients"],
+            ["Al Warqa 1", "Dubai Location"],
             ["Walk-ins", "Served Daily"]
           ].map(([value, label]) => (
             <div key={label} className="rounded-2xl bg-ink/55 p-5 text-center">
